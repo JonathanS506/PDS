@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:8080/api/cuentas'
+const API_URL = 'http://68.183.107.41:8080/api/cuentas'
 
 class CuentaService {
   async crearCuenta(cuenta) {

@@ -141,7 +141,7 @@ const handleRegistro = async () => {
   if (formIsValid) {
     try {
       const response = await axios.post(
-        'http://localhost:8080/api/clientes/fisico',
+        'http://68.183.107.41:8080/api/clientes/fisico',
         clienteFisico.value
       )
       console.log(response.data)

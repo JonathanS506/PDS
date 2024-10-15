@@ -121,9 +121,12 @@ const buscarCliente = async () => {
 const submitForm = async () => {
   if (valid.value && clienteEncontrado.value) {
     try {
-      await axios.put(`http://localhost:8080/api/clientes/correo/${clienteSeleccionado.value}`, {
-        correoElectronico: nuevoCorreo.value
-      })
+      await axios.put(
+        `http://68.183.107.41:8080/api/clientes/correo/${clienteSeleccionado.value}`,
+        {
+          correoElectronico: nuevoCorreo.value
+        }
+      )
       mensajeConfirmacion.value = 'Correo electrónico actualizado exitosamente.'
       mensajeError.value = '' // Limpiar el mensaje de error
     } catch (error) {

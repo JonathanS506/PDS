@@ -55,7 +55,7 @@ const errorVenta = ref(null)
 
 const consultarTipoCambioCompra = async () => {
   try {
-    const response = await axios.get('http://localhost:8080/api/tipo-cambio/compra')
+    const response = await axios.get('http://68.183.107.41:8080/api/tipo-cambio/compra')
     tipoCambioCompra.value = response.data
     errorCompra.value = null
   } catch (error) {
@@ -67,7 +67,7 @@ const consultarTipoCambioCompra = async () => {
 
 const consultarTipoCambioVenta = async () => {
   try {
-    const response = await axios.get('http://localhost:8080/api/tipo-cambio/venta')
+    const response = await axios.get('http://68.183.107.41:8080/api/tipo-cambio/venta')
     tipoCambioVenta.value = response.data
     errorVenta.value = null
   } catch (error) {

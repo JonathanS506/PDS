@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:8080/api/clientes/fisicos'
+const API_URL = 'http://68.183.107.41:8080/api/clientes/fisicos'
 
 class ClienteService {
   async crearCliente(clienteFisico) {

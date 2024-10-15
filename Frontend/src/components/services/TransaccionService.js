@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_URL = 'http://localhost:8080/api/transacciones'
+const API_URL = 'http://68.183.107.41:8080/api/transacciones'
 
 class TransaccionService {
   async registrarTransaccion(transaccion, idCliente, pinIngresado) {

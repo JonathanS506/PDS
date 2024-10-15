@@ -111,7 +111,7 @@ const rules = {
 const buscarCliente = async () => {
   try {
     const response = await axios.get(
-      `http://localhost:8080/api/clientes/${clienteSeleccionado.value}`
+      `http://68.183.107.41:8080/api/clientes/${clienteSeleccionado.value}`
     )
     const cliente = response.data
     clienteEncontrado.value = true

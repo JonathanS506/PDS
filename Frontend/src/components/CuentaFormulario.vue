@@ -78,7 +78,10 @@ const rules = {
 const submitForm = async () => {
   if (valid.value) {
     try {
-      const response = await axios.post('http://localhost:8080/api/cuentas/registrar', cuenta.value)
+      const response = await axios.post(
+        'http://68.183.107.41:8080/api/cuentas/registrar',
+        cuenta.value
+      )
       mensaje.value = 'Cuenta registrada exitosamente.'
       console.log('Cuenta creada:', response.data)
       Object.keys(cuenta.value).forEach((key) => {

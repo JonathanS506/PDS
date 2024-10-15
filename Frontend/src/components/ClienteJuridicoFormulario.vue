@@ -152,7 +152,7 @@ const submitForm = async () => {
   if (valid.value) {
     try {
       const response = await axios.post(
-        'http://localhost:8080/api/clientes/juridico',
+        'http://68.183.107.41:8080/api/clientes/juridico',
         clienteJuridico.value
       )
       mensaje.value = 'Cliente registrado exitosamente.'
